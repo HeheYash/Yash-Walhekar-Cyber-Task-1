@@ -51,4 +51,4 @@ Wireshark is also used to capture the network traffic generated during the scan 
 * **Analysis:** The filtering of the capture was used to indicate the TCP packets that had the SYN flag. As it can be observed in the screenshot, the scanning machine (YOURPCIP) transmits a sequence of [SYN] packets to the target (ROUTER_IP) on different ports.
 * **Finding:** The target replies with an open port (port 53) [SYN] packet containing an ACK packet. It is this SYN, ACK response which is, in fact, how Nmap reports an open port and proves the accuracy of the scan.  
 
-![Wireshark Scan Capture](Wireshark_results.png)
+![Wireshark Scan Capture](Wireshark_scan_results.png)
