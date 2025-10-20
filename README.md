@@ -39,3 +39,5 @@ The research focused on the services running in **`Host 2`**,which has a potenti
     * **Implement a Firewall:** Host-based type of firewall should also be installed to permit blocked ports of `135`, `139`, and `445`. Only trusted IP addresses should be made to connecting the local network.
     * **Apply Security Patches:** Windows operating system must always be patched with the latest security patches to eliminate the vulnerabilities that are well known.
     * **Disable Legacy Protocols:** Do not use NetBIOS over TCP/IP unless you need to use it.
+
+    
