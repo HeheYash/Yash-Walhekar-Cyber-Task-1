@@ -40,4 +40,12 @@ The research focused on the services running in **`Host 2`**,which has a potenti
     * **Apply Security Patches:** Windows operating system must always be patched with the latest security patches to eliminate the vulnerabilities that are well known.
     * **Disable Legacy Protocols:** Do not use NetBIOS over TCP/IP unless you need to use it.
 
-    
+## 5. Wireshark Analysis
+
+Wireshark is also used to capture the network traffic generated during the scan together with the Nmap scan. This gives a more in depth, packet level understanding of the way Nmap is able to decide whether a port is open.
+
+* **Operation:** A TCP SYN scan was executed as the Wireshark packets were snortied.
+* **Analysis:** The filtering of the capture was used to indicate the TCP packets that had the SYN flag. As it can be observed in the screenshot, the scanning machine (YOURPCIP) transmits a sequence of [SYN] packets to the target (ROUTER_IP) on different ports.
+* **Finding:** The target replies with an open port (port 53) [SYN] packet containing an ACK packet. It is this SYN, ACK response which is, in fact, how Nmap reports an open port and proves the accuracy of the scan.  
+
+![Wireshark Scan Capture](Wireshark_results.png)
