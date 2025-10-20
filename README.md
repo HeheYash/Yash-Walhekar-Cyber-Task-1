@@ -3,6 +3,9 @@ Network scan and analysis for Elevate Labs internship task 1
 
 # Cyber Security Internship: Task 1 - Network Port Scan
 
+![Nmap_Scan_Results](Nmap_results.png)
+
+
 ## 1. Objective
 
 In this case, the task was to perform network reconnaissance in a local network using Nmap. The task in this case was to determine the active hosts, the ports available and the potential security risk of running services.
