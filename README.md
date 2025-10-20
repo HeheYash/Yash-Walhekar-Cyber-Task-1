@@ -24,14 +24,14 @@ The scan identified two active hosts. For privacy and security, all IP addresses
 
 | Anonymized Host | Open Ports                               | Inferred OS / Device Type | Notes                                      |
 | --------------- | ---------------------------------------- | ------------------------- | ------------------------------------------ |
-| `ROUTER_IP`     | `53/tcp` (DNS)                           | Router or DNS Server      | Standard port for network DNS resolution.  |
-| `YOUR_PC_IP`    | `135/tcp` (msrpc) <br> `139/tcp` (netbios-ssn) <br> `445/tcp` (microsoft-ds) | Windows Machine           | Ports indicate active file/printer sharing services (SMB). |
+| `Host 1`     | `53/tcp` (DNS)                           | Router or DNS Server      | Standard port for network DNS resolution.  |
+| `Host 2`    | `135/tcp` (msrpc) <br> `139/tcp` (netbios-ssn) <br> `445/tcp` (microsoft-ds) | Windows Machine           | Ports indicate active file/printer sharing services (SMB). |
 
 ---
 
 ## 4. Security Analysis and Recommendations
 
-The analysis focused on the services running on **`YOUR_PC_IP`**, which present a potential attack surface.
+The analysis focused on the services running on **`Host 2`**, which present a potential attack surface.
 
 * **Identified Risk:** The Server Message Block (SMB) service on port `445/tcp` is a primary vector for network attacks if not properly secured. Historically, vulnerabilities in SMB have been exploited by widespread ransomware like WannaCry.
 
